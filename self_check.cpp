@@ -1,9 +1,10 @@
-/* 
+/*
  ensure your brutal algorithm pass the test cases.
  and when you also has a optimized solution
  you can use random number generator to generate multiple test cases
  implement brutal first, and implement your optimized solution, compare the answers.
  print the test cases that fails
+ https://www.bilibili.com/video/BV1mM4y1H7fz/?spm_id_from=333.1387.homepage.video_card.click&vd_source=34799eaecd5746297a862954c669cc6a
 */
 
 #include <iostream>
