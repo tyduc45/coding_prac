@@ -48,6 +48,20 @@ int rightLeft(std::vector<int> arr, int target)
     return -1;
 }
 
+int rightRight(std::vector<int> arr, int target)
+{
+    int pos = -1;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] <= target)
+        {
+            pos++;
+        }
+        else break;
+    }
+    return pos;
+}
+
 /*
  binary search always abort elements that is not needed, so m always stands for the boundary of needed elements
 */
@@ -68,6 +82,28 @@ int find_big_left(std::vector<int> arr, int target)
         else
         {
             l = m + 1;
+        }
+    }
+    return ans;
+}
+
+int find_small_right(std::vector<int> arr, int target)
+{
+    if (arr.size() == 0)
+        return -1;
+
+    int l = 0, r = arr.size() - 1, m = 0, ans = -1;
+    while (l <= r)
+    {
+        m = (l + r) / 2;
+        if (arr[m] <= target)
+        {
+            ans = m;
+            l = m + 1;
+        }
+        else
+        {
+            r = m - 1;
         }
     }
     return ans;
@@ -132,6 +168,7 @@ int main()
     std::cout << "test starts \n";
     runTest<bool>(right,exists,N,V,testTimes,rng,dist);
     runTest<int>(rightLeft, find_big_left, N, V, testTimes, rng, dist);
+    runTest<int>(rightRight, find_small_right, N, V, testTimes, rng, dist);
     std::cout << "test ends \n";
 
     return 0;
