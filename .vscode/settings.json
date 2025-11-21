@@ -88,6 +88,8 @@
         "xlocnum": "cpp",
         "xloctime": "cpp",
         "xmemory": "cpp",
-        "xtr1common": "cpp"
-    }
+        "xtr1common": "cpp",
+        "string_view": "cpp"
+    },
+    "C_Cpp.default.compilerPath": "E:/mingw-64/mingw64/bin/g++.exe"
 }
