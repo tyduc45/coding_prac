@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/img/PowerIcon.png" alt="Power Logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <header class="page-header">
+    <h1>Appliance Energy Consumption</h1>
+    <p>Understanding energy use in Australian households — helping you save money and reduce your carbon footprint.</p>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+
+    <!-- Introduction -->
+    <section>
+      <h2>Why Energy Efficiency Matters</h2>
+      <p>
+        Household appliances account for a significant portion of Australia's total energy consumption.
+        With electricity prices among the highest in the world, understanding how much energy your
+        appliances consume is a critical step toward reducing household bills and environmental impact.
+      </p>
+      <p>
+        The Australian Government's <strong>Energy Rating</strong> program provides star-rated labels
+        on appliances, making it easier for consumers to compare the running costs of different products
+        before purchasing.
+      </p>
+    </section>
+
+    <!-- Stats -->
+    <section>
+      <h2>Key Statistics</h2>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">~40%</div>
+          <div class="stat-label">of household energy used by heating &amp; cooling</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">~25%</div>
+          <div class="stat-label">used by water heating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">~33%</div>
+          <div class="stat-label">average savings from upgrading old appliances</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">6-star</div>
+          <div class="stat-label">Energy Rating = highest efficiency</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section>
+      <h2>Top Energy-Consuming Appliances</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">❄️</div>
+          <h3>Air Conditioners</h3>
+          <p>Heating and cooling accounts for nearly 40% of home energy use. A 5-star rated reverse-cycle unit can cut costs significantly compared to older models.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🫙</div>
+          <h3>Refrigerators</h3>
+          <p>Fridges run 24/7, making efficiency ratings crucial. Modern inverter-driven compressors use up to 40% less energy than models from 10 years ago.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📺</div>
+          <h3>Televisions</h3>
+          <p>Large screen TVs can consume between 50–400 watts. LED and OLED technologies are considerably more efficient than older plasma screens.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧺</div>
+          <h3>Washing Machines</h3>
+          <p>Front-loaders typically use 40–70% less water and energy than top-loaders. Cold water wash cycles further reduce energy costs.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💧</div>
+          <h3>Dishwashers</h3>
+          <p>Modern dishwashers with eco-modes can use as little as 9 litres of water per cycle, compared to up to 100 litres for hand-washing a full load.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">☀️</div>
+          <h3>Solar &amp; Storage</h3>
+          <p>Pairing energy-efficient appliances with rooftop solar and battery storage is increasingly popular, with over 3 million Australian homes having solar panels.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section>
+      <h2>Energy Saving Tips</h2>
+      <p>Small behavioural changes combined with efficient appliances can lead to meaningful reductions in energy bills:</p>
+      <ul style="padding-left: 1.5rem; margin-top: 0.75rem; color: #424242;">
+        <li style="margin-bottom: 0.5rem;">Set your refrigerator to 3–4°C and freezer to -15 to -18°C.</li>
+        <li style="margin-bottom: 0.5rem;">Use the economy or eco mode on dishwashers and washing machines.</li>
+        <li style="margin-bottom: 0.5rem;">Switch off appliances at the power point rather than leaving on standby.</li>
+        <li style="margin-bottom: 0.5rem;">Set your air conditioner to 24°C in summer — each degree lower increases running costs by ~10%.</li>
+        <li style="margin-bottom: 0.5rem;">Look for the highest star rating when replacing old appliances.</li>
+        <li style="margin-bottom: 0.5rem;">Wash clothes in cold water and air-dry when possible.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Energy Calculator ===== -->
+    <section>
+      <h2>Energy Calculator</h2>
+      <p>Estimate how much a household appliance costs to run. Select a model or enter a custom wattage.</p>
+
+      <div class="calculator-wrapper">
+
+        <!-- The form — each input has an id so JavaScript can find it -->
+        <form class="calc-form" id="calc-form" novalidate>
+
+          <!-- novalidate disables browser's built-in validation so our JS handles it instead -->
+
+          <!-- Appliance selector: a <select> dropdown pre-loaded with known wattages -->
+          <div class="form-group">
+            <label for="appliance-select">Appliance (preset wattages)</label>
+            <select id="appliance-select">
+              <option value="">— Custom / enter watts manually —</option>
+              <option value="75">Television – LED 55" (75 W)</option>
+              <option value="131">Television – OLED 55" (131 W)</option>
+              <option value="320">Television – Plasma 50" legacy (320 W)</option>
+              <option value="150">Refrigerator – modern (150 W)</option>
+              <option value="2400">Air Conditioner – 2.4 kW split system (2400 W)</option>
+              <option value="500">Washing Machine – front loader (500 W)</option>
+              <option value="1200">Dishwasher (1200 W)</option>
+              <option value="2000">Electric Oven (2000 W)</option>
+              <option value="60">LED Lighting – whole house estimate (60 W)</option>
+            </select>
+          </div>
+
+          <!-- Custom watt input — only used when "Custom" is selected in the dropdown -->
+          <div class="form-group" id="watts-group">
+            <label for="watts">Custom Power Usage (watts)</label>
+            <input type="number" id="watts" placeholder="e.g. 250" min="1" />
+            <span class="field-error" id="watts-error">Please enter a power value greater than 0.</span>
+          </div>
+
+          <div class="form-row">
+            <!-- Hours per day -->
+            <div class="form-group">
+              <label for="hours">Hours Used per Day</label>
+              <input type="number" id="hours" placeholder="e.g. 4" min="0.1" max="24" step="0.1" />
+              <span class="field-error" id="hours-error">Enter a value between 0.1 and 24.</span>
+            </div>
+
+            <!-- Electricity tariff in cents/kWh — typical Australian rate is ~30 c/kWh -->
+            <div class="form-group">
+              <label for="tariff">Electricity Price (cents/kWh)</label>
+              <input type="number" id="tariff" placeholder="e.g. 30" min="1" step="0.1" value="30" />
+              <span class="field-error" id="tariff-error">Enter a price greater than 0.</span>
+            </div>
+          </div>
+
+          <button type="submit" class="calc-btn">Calculate</button>
+        </form>
+
+        <!-- Results panel — hidden by default; JS adds class="visible" to show it -->
+        <div class="calc-results" id="calc-results">
+          <h3>Results</h3>
+          <div class="result-row">
+            <span class="result-label">Daily energy use</span>
+            <span class="result-value" id="res-daily-kwh">—</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Monthly energy use</span>
+            <span class="result-value" id="res-monthly-kwh">—</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Yearly energy use</span>
+            <span class="result-value" id="res-yearly-kwh">—</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Estimated monthly cost</span>
+            <span class="result-value" id="res-monthly-cost">—</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Estimated yearly cost</span>
+            <span class="result-value" id="res-yearly-cost">—</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-section">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What does the Energy Star Rating label mean?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The Energy Rating label is a government-backed scheme that appears on many household
+              appliances sold in Australia and New Zealand. It shows a star rating (more stars = more
+              efficient) and an annual energy consumption figure in kilowatt-hours (kWh), allowing
+              you to compare the running costs of different models before buying.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Which household appliances use the most electricity?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              In a typical Australian home, the biggest energy users are heating and cooling systems
+              (around 40%), water heating (around 25%), and refrigeration (around 7%). Other
+              significant contributors include lighting, ovens, and entertainment equipment such
+              as televisions and gaming consoles.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much can I save by upgrading to a more efficient appliance?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Savings vary depending on the appliance type, usage patterns, and the efficiency
+              difference between the old and new model. On average, upgrading from a 2-star to a
+              5-star refrigerator can save approximately $80–$120 per year. Over the appliance's
+              lifetime of 10–15 years, total savings can exceed the upfront cost premium of
+              choosing a higher-rated model.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is standby power and why does it matter?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Standby power (sometimes called "phantom load" or "vampire power") refers to the
+              electricity consumed by appliances when they are switched off but still plugged in.
+              Common culprits include televisions, set-top boxes, gaming consoles, and phone
+              chargers. In Australia, standby power can account for up to 10% of a household's
+              total electricity bill. Switching appliances off at the power point eliminates
+              standby consumption entirely.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Does the time of day I use appliances affect my bill?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, if you are on a time-of-use (TOU) electricity tariff. Under a TOU plan, electricity
+              costs more during peak demand periods (typically weekday evenings) and less during
+              off-peak periods (late night and weekends). Running high-consumption appliances such
+              as dishwashers, washing machines, and pool pumps during off-peak hours can reduce
+              your electricity bill. Check with your retailer to see if you are on a TOU plan.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Where can I find more information on energy efficiency in Australia?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The <strong>Australian Government Energy Rating website</strong> (energyrating.gov.au)
+              provides a comprehensive product database, running cost calculators, and detailed
+              guidance for consumers. The <strong>Department of Climate Change, Energy, the
+              Environment and Water</strong> also publishes household energy usage data and
+              tips for reducing consumption.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Appliance Energy Consumption Website &mdash; COS30045 Web Data Visualisation</p>
+    <p style="margin-top: 0.3rem;">Data sourced from <a href="https://www.energyrating.gov.au" target="_blank">energyrating.gov.au</a></p>
+  </footer>
+
+  <!-- ===== Calculator Script ===== -->
+  <!-- src= loads an external JS file — this is the separation of concerns requirement -->
+  <script src="assets/js/calculator.js"></script>
+
+  <!-- ===== FAQ Accordion Script ===== -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const answer = this.nextElementSibling;
+        const isOpen = this.classList.contains('open');
+
+        // Close all open items
+        document.querySelectorAll('.faq-question').forEach(function (q) {
+          q.classList.remove('open');
+          q.setAttribute('aria-expanded', 'false');
+          q.nextElementSibling.classList.remove('open');
+        });
+
+        // Toggle the clicked item
+        if (!isOpen) {
+          this.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+          answer.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
