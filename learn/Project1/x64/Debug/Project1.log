@@ -1,0 +1,96 @@
+﻿  test.cpp
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(170,16): warning C4267: “初始化”: 从“size_t”转换到“mini_absl::ctrl_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+      E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(170,16):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\cpp_review\coding\learn\Project1\test.cpp(73,46):
+          查看对正在编译的 类 模板 实例化“mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>”的引用
+          with
+          [
+              K=std::string
+          ]
+          E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(159,24):
+          在编译 类 模板 成员函数“std::pair<V *,bool> mini_absl::FlatHashMap<std::string,V,std::hash<K>,std::equal_to<K>>::insert_or_assign(const K &,V)”时
+          with
+          [
+              V=int,
+              K=std::string
+          ]
+              E:\cpp_review\coding\learn\Project1\test.cpp(74,23):
+              请参阅 "test_string_keys" 中对 "mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::insert_or_assign" 的第一个引用
+          with
+          [
+              K=std::string
+          ]
+  
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(192,24): warning C4267: “参数”: 从“size_t”转换到“mini_absl::ctrl_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+  
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(137,15): warning C4267: “初始化”: 从“size_t”转换到“mini_absl::ctrl_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+      E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(137,15):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(132,7):
+          在编译 类 模板 成员函数“V *mini_absl::FlatHashMap<std::string,V,std::hash<K>,std::equal_to<K>>::find(const K &)”时
+          with
+          [
+              V=int,
+              K=std::string
+          ]
+              E:\cpp_review\coding\learn\Project1\test.cpp(77,5):
+              请参阅 "test_string_keys" 中对 "mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::find" 的第一个引用
+          with
+          [
+              K=std::string
+          ]
+  
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(203,15): warning C4267: “初始化”: 从“size_t”转换到“mini_absl::ctrl_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+      E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(203,15):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\cpp_review\coding\learn\Project1\test.cpp(45,38):
+          查看对正在编译的 类 模板 实例化“mini_absl::FlatHashMap<int,int,std::hash<int>,std::equal_to<K>>”的引用
+          with
+          [
+              K=int
+          ]
+          E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(199,9):
+          在编译 类 模板 成员函数“bool mini_absl::FlatHashMap<int,int,std::hash<int>,std::equal_to<K>>::erase(const K &)”时
+          with
+          [
+              K=int
+          ]
+              E:\cpp_review\coding\learn\Project1\test.cpp(57,16):
+              请参阅 "test_grow" 中对 "mini_absl::FlatHashMap<int,int,std::hash<int>,std::equal_to<K>>::erase" 的第一个引用
+          with
+          [
+              K=int
+          ]
+  
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(209,34): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+  
+E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(248,15): warning C4267: “初始化”: 从“size_t”转换到“mini_absl::ctrl_t”，可能丢失数据
+  (编译源文件“test.cpp”)
+      E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(248,15):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(245,11):
+          在编译 类 模板 成员函数“size_t mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::find_first_not_full(size_t)”时
+          with
+          [
+              K=std::string
+          ]
+              E:\cpp_review\coding\learn\Project1\flat_hash_table_simd.h(191,19):
+              请参阅 "mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::insert_or_assign" 中对 "mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::find_first_not_full" 的第一个引用
+          with
+          [
+              K=std::string
+          ]
+              E:\cpp_review\coding\learn\Project1\test.cpp(74,23):
+              请参阅 "test_string_keys" 中对 "mini_absl::FlatHashMap<std::string,int,std::hash<K>,std::equal_to<K>>::insert_or_assign" 的第一个引用
+          with
+          [
+              K=std::string
+          ]
+  
+  Project1.vcxproj -> E:\cpp_review\coding\learn\x64\Debug\Project1.exe

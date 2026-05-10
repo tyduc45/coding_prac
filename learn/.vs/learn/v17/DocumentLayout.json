@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\cpp_review\\coding\\learn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|E:\\cpp_review\\coding\\learn\\Project1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|solutionrelative:Project1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|E:\\cpp_review\\coding\\learn\\Project1\\qsort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|solutionrelative:Project1\\qsort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|E:\\cpp_review\\coding\\learn\\Project1\\qsort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|solutionrelative:Project1\\qsort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table_simd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|solutionrelative:Project1\\flat_hash_table_simd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8769EEC-D413-4F99-BEE0-A9BCE15FA792}|Project1\\Project1.vcxproj|solutionrelative:Project1\\flat_hash_table.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "flat_hash_table_simd.h",
+              "DocumentMoniker": "E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table_simd.h",
+              "RelativeDocumentMoniker": "Project1\\flat_hash_table_simd.h",
+              "ToolTip": "E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table_simd.h",
+              "RelativeToolTip": "Project1\\flat_hash_table_simd.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T07:49:20.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.cpp",
+              "DocumentMoniker": "E:\\cpp_review\\coding\\learn\\Project1\\test.cpp",
+              "RelativeDocumentMoniker": "Project1\\test.cpp",
+              "ToolTip": "E:\\cpp_review\\coding\\learn\\Project1\\test.cpp",
+              "RelativeToolTip": "Project1\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-10T07:19:59.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "flat_hash_table.h",
+              "DocumentMoniker": "E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table.h",
+              "RelativeDocumentMoniker": "Project1\\flat_hash_table.h",
+              "ToolTip": "E:\\cpp_review\\coding\\learn\\Project1\\flat_hash_table.h",
+              "RelativeToolTip": "Project1\\flat_hash_table.h",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-09T11:05:11.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "qsort.h",
+              "DocumentMoniker": "E:\\cpp_review\\coding\\learn\\Project1\\qsort.h",
+              "RelativeDocumentMoniker": "Project1\\qsort.h",
+              "ToolTip": "E:\\cpp_review\\coding\\learn\\Project1\\qsort.h",
+              "RelativeToolTip": "Project1\\qsort.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-09T08:32:54.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "qsort.cpp",
+              "DocumentMoniker": "E:\\cpp_review\\coding\\learn\\Project1\\qsort.cpp",
+              "RelativeDocumentMoniker": "Project1\\qsort.cpp",
+              "ToolTip": "E:\\cpp_review\\coding\\learn\\Project1\\qsort.cpp",
+              "RelativeToolTip": "Project1\\qsort.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-09T08:17:53.631Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
