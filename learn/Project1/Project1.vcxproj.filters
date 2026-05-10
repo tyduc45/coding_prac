@@ -27,6 +27,9 @@
     <ClCompile Include="flat_hash_table_simd.h">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="castlearn.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="qsort.h">

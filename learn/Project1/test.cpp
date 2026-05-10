@@ -161,8 +161,10 @@ void bench() {
             << " ms (sum=" << sum << ")\n";
     }
 }
+using Fn = void(*)(int);
 
-int main() {
+void f(double) {}
+int m() {
     test_basic();
     test_grow();
     test_string_keys();
